@@ -4,7 +4,8 @@ const Razorpay = require("razorpay");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 
-dotenv.config();
+// dotenv.config();
+dotenv.config({ path: "./config.env" });
 
 let instance = new Razorpay({
  key_id: process.env.KEY_ID, //  `KEY_ID`
