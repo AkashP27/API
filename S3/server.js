@@ -18,6 +18,8 @@ mongoose
 
 app.use(express.json());
 
+app.use("/image", require("./image"));
+
 app.listen(5000, () => {
 	console.log("Server is running on 5000");
 });
