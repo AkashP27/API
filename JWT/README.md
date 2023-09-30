@@ -28,7 +28,7 @@ git clone https://github.com/AkashP27/API.git
 
 #### Step 4: Create the Environment File
 
-- Create a file named .env in the / directory.
+- Create a file named .env in the /JWT directory.
 - Copy all variables from tmp.env and paste inside .env
   This file will store environment variables for the project to run.
 
@@ -53,3 +53,9 @@ In the same terminal, run the following command to start the server:
 ```bash
 npm run dev
 ```
+
+### You can test the API in postman
+
+[Set postman environment from here](https://www.postman.com/akash-api/workspace/akash-public/environment/16112169-8faac55e-e2dc-4fd2-9548-4c8c20624a87?action=share&creator=16112169&active-environment=16112169-8faac55e-e2dc-4fd2-9548-4c8c20624a87)
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/16112169-6f4581ae-1fcd-476b-b789-1dece9db8c88?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D16112169-6f4581ae-1fcd-476b-b789-1dece9db8c88%26entityType%3Dcollection%26workspaceId%3D9fe04cc0-53c6-4f02-842b-8fe10274477e)
