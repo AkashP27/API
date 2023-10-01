@@ -1,6 +1,6 @@
-# Authorization using JSON Web Token
+# Image/File upload to AWS S3
 
-This project focuses on authorization using JWT and forgot/reset password via email tokens using nodemailer
+This project focuses on different file uploading, retrieving and deletion from S3 using pre-signed URL
 
 ## Requirements
 
@@ -22,13 +22,13 @@ git clone https://github.com/AkashP27/API.git
 
 - add your current IP address to the MongoDB database's IP whitelist to allow connections (this is needed whenever your ip changes)
 
-#### Step 3: Create mailtrap account
+#### Step 3: Create AWS account
 
-- Visit [mailtrap.io](https://mailtrap.io/) to get the credentials.
+- Visit [AWS](https://aws.amazon.com/) to start S3 service and get credentials for the bucket
 
 #### Step 4: Create the Environment File
 
-- Create a file named config.env in the /JWT directory.
+- Create a file named config.env in the /S3 directory.
 - Copy all variables from tmp.env and paste inside config.env
   This file will store environment variables for the project to run.
 
@@ -37,7 +37,7 @@ git clone https://github.com/AkashP27/API.git
 In your terminal, navigate to the /JWT directory of the project and run the following command to install the dependencies:
 
 ```bash
-cd JWT
+cd S3
 ```
 
 ```bash
