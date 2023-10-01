@@ -82,7 +82,7 @@ const Payment = () => {
 
 			if (content.order.status === "created") {
 				let options = {
-					key_id: "rzp_test_gym23pa0YynSmB",
+					key_id: process.env.REACT_APP_KEY_ID,
 					amount: content.order.amount,
 					currency: "INR",
 					name: "Payment Integration App",
