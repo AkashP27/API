@@ -1,6 +1,6 @@
-# Image/File upload to AWS S3
+# Image Gallery
 
-This project focuses on different file uploading, retrieving and deletion from S3 using pre-signed URL
+This repository focuses on image uploading, retrieving and deletion from cloudinary using nodejs application
 
 ## Requirements
 
@@ -22,22 +22,22 @@ git clone https://github.com/AkashP27/API.git
 
 - add your current IP address to the MongoDB database's IP whitelist to allow connections (this is needed whenever your ip changes)
 
-#### Step 3: Create AWS account
+#### Step 3: Create Cloudinary account
 
-- Visit [AWS](https://aws.amazon.com/) to start S3 service and get credentials for the bucket
+- Visit [Cloudinary](https://cloudinary.com/) to get Product Environment Credentials
 
 #### Step 4: Create the Environment File
 
-- Create a file named config.env in the /S3 directory.
+- Create a file named config.env in the /ImageGallery directory.
 - Copy all variables from tmp.env and paste inside config.env
   This file will store environment variables for the project to run.
 
 #### Step 5: Install the Dependencies
 
-In your terminal, navigate to the /S3 directory of the project and run the following command to install the dependencies:
+In your terminal, navigate to the /ImageGallery directory of the project and run the following command to install the dependencies:
 
 ```bash
-cd S3
+cd ImageGallery
 ```
 
 ```bash
