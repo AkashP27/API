@@ -1,13 +1,15 @@
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const AppError = require("./utils/appError");
+const errorHandler = require("./errorHandling");
+const app = express();
 
 dotenv.config({ path: "config.env" });
 
 mongoose
-	.connect(process.env.MONGO_URL, {
+	.connect(process.env.DATABASE_LOCAL, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 		// useCreateIndex: true,
@@ -23,4 +25,12 @@ app.use(cors());
 // Route
 app.use("/image", require("./image"));
 
-app.listen(5000, () => console.log("Server is running on 5000"));
+app.all("*", (req, res, next) => {
+	next(new AppError(`Can't find ${req.originalUrl}`, 404));
+});
+
+app.use(errorHandler);
+
+app.listen(5000, () => {
+	console.log("Server is running on 5000");
+});
